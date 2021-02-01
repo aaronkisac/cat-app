@@ -1,7 +1,9 @@
 A mini Cats app created with Create React App, React Hooks, and the https://docs.thecatapi.com/
 
 Cats app
-(public/cgc.jpg)
+
+![CAT-APP](public/cgc.jpg)
+
 
 Getting started
 Clone repo in teminal: git clone https://github.com/harunkisacuk/cat-app.git
