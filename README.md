@@ -11,7 +11,7 @@ Run yarn to install dependencies
 
 Cats App
 
-![CAT-APP](public/catApp.jpg)
+![CAT-APP](public/catApp.gif)
 
 
 yarn start
