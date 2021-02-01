@@ -3,21 +3,26 @@ import { FaCat } from "react-icons/fa";
 
 export const StyledWrapper = styled.div`
   width: 100%;
-  div {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    height: 5rem;
-    color: white;
-    background-color: #33353d;
-  }
+  background-color: #33353d;
+`;
+export const StyledHeaderBody = styled.div`
+  width: 100%;
+  max-width: 1700px;
+  min-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 5rem;
+  color: white;
+  box-shadow: 1px 5px 5px 5px rgba(175, 175, 175, 0.3);
 `;
 export const StyledUserName = styled.div`
   color: white;
   background-color: transparent;
   padding: 0 2rem;
   font-size: 1.3rem;
-  align-items: center;
+  align-self: center;
 `;
 export const Links = styled.div`
   display: flex;

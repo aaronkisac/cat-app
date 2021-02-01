@@ -30,7 +30,11 @@ export const StyledWrapper = styled.div`
 export const StyledInput = styled.input`
   display: none;
 `;
-
+export const StylesImg = styled.img`
+  margin-top: 20px;
+  max-width: 25rem;
+  min-width: 18.75rem;
+`;
 export const StyledLabel = styled.label`
   min-width: 210px;
   max-width: 468px;

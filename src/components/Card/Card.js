@@ -3,7 +3,7 @@ import {
   StyledWrapper,
   StylesImg,
   FavIcon,
-  DisFavIcon,
+  UnFavIcon,
   DisLikeIcon,
   LikeIcon,
   StyledTotal,
@@ -12,21 +12,29 @@ import {
 
 export const Card = (props) => {
   return (
-    <StyledWrapper>
+    <StyledWrapper data-testid="cardId">
       <StylesImg src={props.image.url} alt={props.image.id} />
       <div>
         <StyledTotal>total vote : {props.totalVote}</StyledTotal>
         <StyledIcons>
-          <LikeIcon onClick={() => props.handleVote(props.image.id, 1)} />
+          <LikeIcon
+            data-testid="likeIconId"
+            onClick={() => props.handleVote(props.image.id, 1)}
+          />
           {props.numberOfLikes}
-          <DisLikeIcon onClick={() => props.handleVote(props.image.id, 0)} />
+          <DisLikeIcon
+            data-testid="disLikeIconId"
+            onClick={() => props.handleVote(props.image.id, 0)}
+          />
           {props.numberOfDisLikes}
           {props.favId ? (
             <FavIcon
+              data-testid="favIconId"
               onClick={() => props.handleFavorites(!!props.favId, props.favId)}
             />
           ) : (
-            <DisFavIcon
+            <UnFavIcon
+              data-testid="unFavIconId"
               onClick={() =>
                 props.handleFavorites(!!props.favId, props.image.id)
               }

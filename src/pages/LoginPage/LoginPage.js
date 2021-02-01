@@ -21,13 +21,11 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <Login
-        value={value}
-        handleOnChange={handleOnChange}
-        handleSubmit={handleSubmit}
-      />
-    </div>
+    <Login
+      value={value}
+      handleOnChange={handleOnChange}
+      handleSubmit={handleSubmit}
+    />
   );
 };
 

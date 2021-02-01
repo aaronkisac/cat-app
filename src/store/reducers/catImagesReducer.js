@@ -12,7 +12,6 @@ export const initialState = {
   catImages: [],
   favs: [],
   votes: [],
-  error: "",
 };
 
 const catImagesReducer = (state = initialState, action) =>

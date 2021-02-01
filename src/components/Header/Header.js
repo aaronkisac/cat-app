@@ -2,15 +2,20 @@ import { Button } from "components";
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { StyledWrapper, StyledUserName, Links, Icon } from "./Header.styles";
+import {
+  StyledWrapper,
+  StyledHeaderBody,StyledUserName,
+  Links,
+  Icon,
+} from "./Header.styles";
 
 export const Header = () => {
   const history = useHistory();
-  const userName = useSelector((state) => state?.catImagesResult.userName);
+  const userName = useSelector((state) => state?.catImagesResult?.userName);
 
   return (
     <StyledWrapper>
-      <div>
+      <StyledHeaderBody>
         <Links>
           <Button onClick={() => history.push("/")}>Home</Button>
           <Button onClick={() => history.push("/upload")}>Upload Image</Button>
@@ -19,11 +24,9 @@ export const Header = () => {
           </Button>
         </Links>
         <StyledUserName>
-         
-            {userName && <Icon />} {userName}
-      
+          {userName && <Icon />} {userName}
         </StyledUserName>
-      </div>
+      </StyledHeaderBody>
     </StyledWrapper>
   );
 };

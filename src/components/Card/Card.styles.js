@@ -33,7 +33,7 @@ export const FavIcon = styled(MdFavorite)`
   margin: 0 15px;
 `;
 
-export const DisFavIcon = styled(GrFavorite)`
+export const UnFavIcon = styled(GrFavorite)`
   cursor: pointer;
   margin: 0 15px;
   color: white;

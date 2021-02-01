@@ -1,5 +1,10 @@
 import { useRef } from "react";
-import { StyledWrapper, StyledInput, StyledLabel } from "./ImageUpload.styles";
+import {
+  StyledWrapper,
+  StyledInput,
+  StyledLabel,
+  StylesImg,
+} from "./ImageUpload.styles";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { Button } from "components";
@@ -51,11 +56,17 @@ export const ImageUpload = (props) => {
         </StyledLabel>
         {errors.picture && <p>{errors.picture.message}</p>}
         <StyledLabel className="label-button">
-        <Button type="submit" disabled={!props?.selectedImageFile.length}>
-          Upload
-        </Button>
+          <Button type="submit" disabled={!props?.selectedImageFile.length}>
+            Upload
+          </Button>
         </StyledLabel>
       </form>
+      {props?.selectedImageFile?.length && (
+        <StylesImg
+          src={URL.createObjectURL(props.selectedImageFile[0])}
+          alt={props.selectedImageFile[0].name}
+        />
+      )}
     </StyledWrapper>
   );
 };

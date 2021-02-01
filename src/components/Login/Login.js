@@ -1,17 +1,17 @@
-import { StyledWrapper } from "./Login.styles";
+import { StyledWrapper, StyledInput } from "./Login.styles";
+import { Button } from "components";
 export const Login = (props) => {
   return (
     <StyledWrapper>
-      Login Component
-      <input
+      <StyledInput
         type="text"
-        placeholder="type a user name"
+        placeholder="type a user name please"
         value={props.value}
         onChange={props.handleOnChange}
       />
-      <button type="button" onClick={props.handleSubmit}>
+      <Button type="button" onClick={props.handleSubmit}>
         Login
-      </button>
+      </Button>
     </StyledWrapper>
   );
 };

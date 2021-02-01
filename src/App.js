@@ -29,16 +29,16 @@ function App() {
   }, []);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper >
       <Router>
-        {!store.userName && <Redirect to="/login" />}
+        {!store?.userName && <Redirect to="/login" />}
         <Header />
         <Switch>
           <Route exact path="/">
-            {store.userName ? <ImageListPage /> : <Redirect to="/login" />}
+            {store?.userName ? <ImageListPage /> : <Redirect to="/login" />}
           </Route>
           <Route exact path="/upload">
-            {store.userName ? <UploadImage /> : <Redirect to="/login" />}
+            {store?.userName ? <UploadImage /> : <Redirect to="/login" />}
           </Route>
           <Route exact path="/login">
             <LoginPage />
