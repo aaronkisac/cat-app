@@ -4,7 +4,6 @@ Cats app
 
 ![CAT-APP](public/cgc.jpg)
 
-
 Getting started
 Clone repo in teminal: git clone https://github.com/harunkisacuk/cat-app.git
 Change directory with cd cat-app
