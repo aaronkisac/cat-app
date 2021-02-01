@@ -55,6 +55,7 @@ describe("Card component unit test", () => {
     fireEvent.click(Icon);
     expect(handleClick).toHaveBeenCalled();
   });
+
   test("works onClick on DisLikeIcon", () => {
     const handleClick = jest.fn();
     const { getByTestId } = render(
@@ -64,6 +65,7 @@ describe("Card component unit test", () => {
     fireEvent.click(Icon);
     expect(handleClick).toHaveBeenCalled();
   });
+
   test("works onClick on FavIcon", () => {
     const favId = "5432";
     const handleClick = jest.fn();

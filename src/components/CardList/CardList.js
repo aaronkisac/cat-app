@@ -6,7 +6,8 @@ export const CardList = (props) => {
     <StyledWrapper data-testid="cardListId">
       {props?.catImages?.map((image) => {
         const fav = props?.favs?.find(
-          (fav) => fav?.image_id === image?.id && fav?.sub_id === props?.userName
+          (fav) =>
+            fav?.image_id === image?.id && fav?.sub_id === props?.userName
         );
         const numberOfDisLikes = props?.votes.filter(
           (vote) => vote?.image_id === image?.id && vote?.value === 0

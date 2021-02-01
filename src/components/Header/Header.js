@@ -14,7 +14,7 @@ export const Header = () => {
   const userName = useSelector((state) => state?.catImagesResult?.userName);
 
   return (
-    <StyledWrapper>
+    <StyledWrapper data-testid="headerId">
       <StyledHeaderBody>
         <Links>
           <Button onClick={() => history.push("/")}>Home</Button>
@@ -24,7 +24,7 @@ export const Header = () => {
           </Button>
         </Links>
         <StyledUserName>
-          {userName && <Icon />} {userName}
+          {userName && <Icon data-testid="iconId" />} {userName}
         </StyledUserName>
       </StyledHeaderBody>
     </StyledWrapper>

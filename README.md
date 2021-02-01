@@ -1,4 +1,4 @@
-A mini Cats app created with Create React App, React Hooks, and the https://docs.thecatapi.com/
+A mini Cats app created with Create React App, React Hooks, Redux, styled component and the https://docs.thecatapi.com/
 
 Cats app
 
@@ -11,8 +11,9 @@ Run yarn to install dependencies
 
 Cats App
 
-![CAT-APP](public/catApp.gif)
+https://catsgallaryapp.herokuapp.com/
 
+![CAT-APP](public/catApp.gif)
 
 yarn start
 
@@ -26,9 +27,9 @@ Unfortunately jest has idiosyncracies re. coverage if nothing test-wise has chan
 yarn test --coverage will still generate a coverage report in the project's root directory: coverage/lcov-report (reveal in finder to open coverage index.html files)
 
 Requirements:
-✔️ Use React
+✔️ Use React Hooks, Redux, styled Component
 ✔️ Focus on architecture, code quality, and test coverage
 ✔️ Responsive
 
 Considerations:
-This was a deep dive into React functional components and hooks.
+This was a deep dive into Redux. Challenging and thoroughly enjoyable for someone who has to use ContextAPI at work daily.
